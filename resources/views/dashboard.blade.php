@@ -274,8 +274,9 @@
                                             @forelse ($sekolah as $s)
                                                 <tr>
                                                     <td class="border px-4 py-2">{{ $loop->iteration }}</td>
-                                                    <td class="border px-4 py-2">{{ $s->nama_sekolah }}</td>
+                                                    <td class="border px-4 py-2">{{ $s->nama }}</td>
                                                     <td class="border px-4 py-2">{{ $s->yayasan->nama ?? '-' }}</td>
+                                                    <td class="border px-4 py-2">{{ $s->telepon}}</td>
                                                 </tr>
                                             @empty
                                                 <tr>
